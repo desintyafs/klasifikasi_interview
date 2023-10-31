@@ -11,7 +11,7 @@ st.title('Prediksi Interview Kandidat Karyawan')
 col1, col2 = st.columns(2)
 
 with col1 :
-    years_of_experience = st.number_input ('Jumlah tahun pengalaman yang dimiliki kandidat di bidangnya')
+    years_of_experience = year = st.slider("Jumlah tahun pengalaman yang dimiliki kandidat di bidangnya",1,30, step=1)
     functional_competency_score = st.number_input ('Skor yang mewakili kompetensi fungsional kandidat berdasarkan tes')
     top1_skills_score = st.number_input ('Skor keterampilan paling berharga yang dimiliki kandidat')
     top2_skills_score = st.number_input ('Skor keterampilan paling berharga kedua yang dimiliki kandidat')
