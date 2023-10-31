@@ -73,6 +73,8 @@ cek data yang kosong:
 ```
 df.isnull().sum()
 ```
+![heatmap](heatmap.png)
+
 data calon karyawan yang dipanggil untuk interview sebanyak 53% dan yang tidak di panggil sebanyak 47%:
 ![piechart](pie.png)
 
