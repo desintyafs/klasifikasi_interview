@@ -1,6 +1,6 @@
 # Laporan Proyek Machine Learning
 ### Nama : Desintya Frasiska Putri
-### Nim : 2113510143
+### Nim : 211351043
 ### Kelas : Malam B
 
 ## Domain Proyek
