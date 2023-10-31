@@ -53,7 +53,6 @@ Dataset ini mencakup 10 fitur:
 - call_for_interview - (0 atau 1) Variabel biner yang menunjukkan apakah kandidat dipanggil untuk wawancara atau tidak
 
 ## Data Preparation
-Data yang diambil dari kaggle sudah rapih dan sesuai dengan algoritma yang akan dipakai.
 Library yang di pakai adalah:
 ```
 import numpy as np
@@ -65,6 +64,19 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
+
+Cek duplikat data:
+```
+df.duplicated().sum()
+```
+cek data yang kosong:
+```
+df.isnull().sum()
+```
+data calon karyawan yang dipanggil untuk interview sebanyak 53% dan yang tidak di panggil sebanyak 47%:
+![piechart](pie.png)
+
+Tidak ditemukan data yang kosong/null dan semua tipe data sudah sesuai dengan kebutuhan algoritma maka bisa dilanjut ketahap modeling.
 
 ## Modeling
 1. Menentukan X dan Y
