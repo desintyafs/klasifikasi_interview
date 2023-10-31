@@ -64,6 +64,37 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
+Import dataset dari kaggle:
+pertama kita import token kaggle kita
+```
+from google.colab import files
+files.upload()
+```
+setelah itu kita buat directorynya
+```
+!mkdir -p ~/.kaggle
+!cp kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+!ls ~/.kaggle
+```
+lalu kita download dataset dari kagglenya:
+```
+!kaggle datasets download -d muhammadjawwadismail/hr-competency-scores-for-screening
+```
+selanjutnya kita extract file tersebut
+```
+!mkdir hr-competency-scores-for-screening
+!unzip hr-competency-scores-for-screening.zip -d hr-competency-scores-for-screening
+!ls hr-competency-scores-for-screening
+```
+terakhir kita panggil datasetnya:
+```
+df = pd.read_csv('/content/hr-competency-scores-for-screening/dataset.csv')
+```
+selanjutnya kita cek seperti apa datasetnya dengan cara dibawah ini:
+```
+df.head()
+```
 
 Cek duplikat data:
 ```
