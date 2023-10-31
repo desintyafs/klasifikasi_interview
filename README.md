@@ -106,6 +106,9 @@ df.isnull().sum()
 ```
 ![heatmap](heatmap.png)
 
+mari kita cek penyebaran datasetnya:
+![corr](corr.png)
+
 data calon karyawan yang dipanggil untuk interview sebanyak 53% dan yang tidak di panggil sebanyak 47%:
 ![piechart](pie.png)
 
